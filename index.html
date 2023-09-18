@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vivac Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Vivac Formulario</h1>
+      <p id="description">Este formulario tiene como objetivo conocer tus preferencias para realizar un Vivac.</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Nombre <input type="text" id="name" placeholder="Ingresa tu nombre aqui..." required /></label>
+        <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Ingresa tu email aqui..." required /></label>
+        <label id="number-label" for="number">Edad (opcional) <input type="number" id="number" min="1" max="120" placeholder="Ingresa tu edad aqui..." /></label>
+        <hr>
+        <label for="dropdown">Cual es tu temporada del año favorita para irte de vicac?<select id="dropdown">
+          <option>(Selecciona alguna)</option>
+          <option>Primavera</option>
+          <option>Verano</option>
+          <option>Otoño</option>
+          <option>Invierno</option>
+        </select></label>
+        <div>
+          <p>Al irte de excursion, vivac o de camping, que prefieres?</p>
+<input type="radio" name="radio-button" value="1"/> Ir con amigos</label>
+          <label for="radio-button"><input type="radio" name="radio-button" value="2"/> Ir solo</label>
+        </div>
+        <div>
+          <p>Cuales son las cosas o herramientas que nunca te pueden faltar en un vivac o camping?</p>
+          <label><input type="checkbox" value="1" /> Tienda de camping</label>
+          <label><input type="checkbox" value="2" /> Saco de dormir</label>
+          <label><input type="checkbox" value="3" /> Mochila</label>
+          <label><input type="checkbox" value="4" /> Botiquin de primeros auxilios</label>
+          <label><input type="checkbox" value="5" /> Linterna</label>
+          <label><input type="checkbox" value="6" /> Encendedor</label>
+          <label><input type="checkbox" value="7" /> Navaja o una Multiherramienta</label>
+          <label><input type="checkbox" value="8" /> Filtro de agua</label>
+          <label><input type="checkbox" value="9" /> Comida y agua para varios dias</label>
+          <label><input type="checkbox" value="10" /> Camara de video</label>
+        </div>
+        <label>Algun comentario que quieras agregar... <textarea id="comments" rows="3" cols="30" placeholder="Alguna experiencia que nos quieras contar, o algun comentario..."></textarea></label>
+        <input type="submit" id="submit" value="Enviar" />
+      </form>
+      <h3>Gracias por completar nuestro formulario!</h3>
+    </main>
+  </body>
+</html>
